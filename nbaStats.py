@@ -12,4 +12,5 @@ tbody = statTable.find('tbody')
 
 for tr in tbody.find_all('tr'):
     rank = tr.find_all('td')[0].text
-    print(rank)
+    player = tr.find_all('td')[1].find_all('a')[0].text
+    print(rank, player)
